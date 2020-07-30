@@ -1,0 +1,41 @@
+29-07-2020 20:29:06 - WARNING - Database not found! Creating fresh ... [database_handler/_get_connection]
+29-07-2020 20:29:06 - INFO - Database successfully created! [database_handler/_create_database]
+29-07-2020 20:29:06 - INFO - Connection to database established. [database_handler/create_instance]
+29-07-2020 20:29:06 - WARNING - PyNaCl is not installed, voice will NOT be supported [discord.client/__init__]
+29-07-2020 20:29:06 - INFO - Loaded extensions: [root/<module>]
+29-07-2020 20:29:06 - INFO - 	cogs.licenses [root/<module>]
+29-07-2020 20:29:06 - INFO - 	cogs.bot_owner_commands [root/<module>]
+29-07-2020 20:29:06 - INFO - 	cogs.guild [root/<module>]
+29-07-2020 20:29:06 - INFO - 	cogs.bot_information [root/<module>]
+29-07-2020 20:29:06 - INFO - 	cogs.help [root/<module>]
+29-07-2020 20:29:06 - INFO - 	cogs.top_gg_api [root/<module>]
+29-07-2020 20:29:06 - INFO - 	cogs.cmd_errors [root/<module>]
+29-07-2020 20:29:06 - INFO - Starting license check loop.. [cogs.licenses/before_printer]
+29-07-2020 20:29:06 - INFO - Starting activity loop.. [cogs.bot_information/before_activity_loop]
+29-07-2020 20:29:06 - INFO - Starting update stats loop loop.. [cogs.top_gg_api/before_update_stats_loop]
+29-07-2020 20:29:06 - INFO - Starting database guild checkup.. [cogs.guild/startup_guild_database_check]
+29-07-2020 20:29:08 - WARNING - GUILD_MEMBER_UPDATE referencing an unknown member ID: 738100133815779429. Discarding. [discord.state/parse_guild_member_update]
+29-07-2020 20:29:08 - INFO - Connection to Discord established [root/on_connect]
+29-07-2020 20:29:10 - INFO - License check loop started! [cogs.licenses/before_printer]
+29-07-2020 20:29:10 - INFO - Activity loop started! [cogs.bot_information/before_activity_loop]
+29-07-2020 20:29:10 - INFO - Update stats loop started! [cogs.top_gg_api/before_update_stats_loop]
+29-07-2020 20:29:10 - ERROR - Failed to post server count
+UnauthorizedDetected: DBL token not provided [cogs.top_gg_api/update_stats_loop]
+Traceback (most recent call last):
+  File "C:\Licensy\cogs\top_gg_api.py", line 20, in update_stats_loop
+    await self.dbl_client.post_guild_count()
+  File "C:\Users\Ahmed & Youssef\AppData\Local\Programs\Python\Python38-32\lib\site-packages\dbl\client.py", line 142, in post_guild_count
+    await self.http.post_guild_count(self.bot_id, self.guild_count(), shard_count, shard_no)
+  File "C:\Users\Ahmed & Youssef\AppData\Local\Programs\Python\Python38-32\lib\site-packages\dbl\http.py", line 169, in post_guild_count
+    await self.request('POST', '/bots/{}/stats'.format(bot_id), json=payload)
+  File "C:\Users\Ahmed & Youssef\AppData\Local\Programs\Python\Python38-32\lib\site-packages\dbl\http.py", line 87, in request
+    raise errors.UnauthorizedDetected("DBL token not provided")
+dbl.errors.UnauthorizedDetected: DBL token not provided
+29-07-2020 20:29:10 - INFO - Guild 737704215886954506 Testing found but not registered. Adding entry to database. [cogs.guild/startup_guild_database_check]
+29-07-2020 20:29:10 - INFO - Logged in as: For Testing - 738100133815779429	DiscordPy version: 1.2.5 [root/on_ready]
+29-07-2020 20:29:10 - INFO - Successfully logged in and booted...! [root/on_ready]
+29-07-2020 20:29:10 - INFO - Database guild checkup done! [cogs.guild/startup_guild_database_check]
+29-07-2020 20:59:59 - WARNING - Connection lost [root/on_disconnect]
+29-07-2020 21:00:01 - INFO - Connection to Discord established [root/on_connect]
+29-07-2020 21:00:03 - INFO - Logged in as: For Testing - 738100133815779429	DiscordPy version: 1.2.5 [root/on_ready]
+29-07-2020 21:00:03 - INFO - Successfully logged in and booted...! [root/on_ready]
